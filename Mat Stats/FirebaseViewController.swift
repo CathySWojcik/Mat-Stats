@@ -2,8 +2,8 @@
 //  FirebaseViewController.swift
 //  Mat Stats
 //
-//  Created by Cathy Wojcik on 12/19/16.
-//  Copyright © 2016 Sandburg. All rights reserved.
+//  Created by SAMUEL WOJCIK and CATHY WOJCIK on 12/6/16.
+//  Copyright © 2016 Sam and Cathy Wojcik. All rights reserved..
 //
 
 import UIKit
@@ -11,21 +11,22 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+//import GoogleSignIn
+
 
 class FirebaseViewController: UIViewController, UITextFieldDelegate
 {
-   var refName: FIRDatabaseReference!
+    var refName: DatabaseReference!
     
-    func childByAutoID() -> FIRDatabaseReference {
-        return refName
-    }
+//    //func childByAutoID() -> FIRDatabaseReference {
+//        return refName
+//    }
     
     
     @IBOutlet weak var emailField: UITextField!
 
     @IBOutlet weak var passwordField: UITextField!
-    
-    
+    var emailName:String = ""
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -34,11 +35,11 @@ class FirebaseViewController: UIViewController, UITextFieldDelegate
         textFieldShouldReturn(passwordField)
         textFieldShouldReturn(emailField)
         
-        refName = FIRDatabase.database().reference()
+        refName = Database.database().reference()
         
     }
   
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
        textField.resignFirstResponder()
         return true
     }
@@ -47,14 +48,14 @@ class FirebaseViewController: UIViewController, UITextFieldDelegate
     /**
      * Called when the user click on the view (outside the UITextField).
      */
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
     }
     
-    @IBAction func handleCreateAccount(sender: AnyObject)
+    @IBAction func handleCreateAccount(_ sender: AnyObject)
     {
-        FIRAuth.auth()?.createUserWithEmail(emailField.text!, password: passwordField.text!, completion: { (user, error) in
+        Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user, error) in
             
             if error != nil {
                 print(error!.localizedDescription)
@@ -68,9 +69,9 @@ class FirebaseViewController: UIViewController, UITextFieldDelegate
 
     }
     
-        @IBAction func handleSignIn(sender: UIButton)
+        @IBAction func handleSignIn(_ sender: UIButton)
         {
-            FIRAuth.auth()?.createUserWithEmail(emailField.text!, password: passwordField.text!, completion: { (user, error) in
+            Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user, error) in
                 
                 if error != nil
                 {
@@ -80,12 +81,19 @@ class FirebaseViewController: UIViewController, UITextFieldDelegate
                 {
                     print("User Logged In...")
                 }
+                
+                
             
             })
-        
-           
-            let name: String = emailField.text!
-            self.refName.child("Wrestler").setValue(["Wrestlers Name":name])
+            func prepare(for segue: UIStoryboardSegue, sender: Any?)
+            {
+                let dvc = segue.destination as! ViewController
+                dvc.emailName = emailField.text!
+                //childByAutoID()
+//            self.refName.child("Wrestler").setValue(["Wrestlers Name":emailName])
+//        refName.child("Wrestlers").childByAutoId().setValue(["Wrestlers Name":emailName])
+//        
             
             }
     }
+}

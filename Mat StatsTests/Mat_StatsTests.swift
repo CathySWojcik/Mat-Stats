@@ -7,7 +7,9 @@
 //
 
 import XCTest
-@testable import Mat_Stats
+//import Mat_Stats
+//import FirebaseDatabase
+//import FirebaseCore
 
 class Mat_StatsTests: XCTestCase {
     
@@ -28,7 +30,7 @@ class Mat_StatsTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

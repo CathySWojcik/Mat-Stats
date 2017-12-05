@@ -18,9 +18,10 @@
 		5FFBDF851DF74689006A7082 /* Mat_StatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBDF841DF74689006A7082 /* Mat_StatsTests.swift */; };
 		5FFBDF901DF74689006A7082 /* Mat_StatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBDF8F1DF74689006A7082 /* Mat_StatsUITests.swift */; };
 		ACA775AB1C0AAD7748141A70 /* libPods-Mat Stats.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD91B4E4EEC256D7922DF6F2 /* libPods-Mat Stats.a */; };
+		CE27365F1FACD514001E59F6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE27365E1FACD514001E59F6 /* AdSupport.framework */; };
+		CE689AA01EDDAFD0005DD2BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE689A9F1EDDAFD0005DD2BE /* GoogleService-Info.plist */; };
 		CE9C22BB1E08419200F4E43F /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C22BA1E08419200F4E43F /* FirebaseViewController.swift */; };
 		CED2C9E91E4B955000DDAE62 /* totalStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2C9E81E4B955000DDAE62 /* totalStatsViewController.swift */; };
-		CEE12B1C1E4A104200FEF864 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE12B1B1E4A104200FEF864 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +63,11 @@
 		9CB5F4EB71D579E87186789A /* Pods-Mat Stats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mat Stats.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mat Stats/Pods-Mat Stats.release.xcconfig"; sourceTree = "<group>"; };
 		C0D31FD78AA70F320FCAFF82 /* Pods-Mat StatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mat StatsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mat StatsUITests/Pods-Mat StatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD91B4E4EEC256D7922DF6F2 /* libPods-Mat Stats.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mat Stats.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE27365E1FACD514001E59F6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CE3E572C1FAF7F72006C3DC1 /* Mat Stats-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mat Stats-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE689A9F1EDDAFD0005DD2BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE9C22BA1E08419200F4E43F /* FirebaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
 		CED2C9E81E4B955000DDAE62 /* totalStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = totalStatsViewController.swift; sourceTree = "<group>"; };
-		CEE12B1B1E4A104200FEF864 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF617709BACC3F1D75E699C9 /* Pods-Mat StatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mat StatsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mat StatsTests/Pods-Mat StatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F38CE86EF4CB6ACE6313A5F3 /* libPods-Mat StatsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mat StatsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE27365F1FACD514001E59F6 /* AdSupport.framework in Frameworks */,
 				ACA775AB1C0AAD7748141A70 /* libPods-Mat Stats.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +117,7 @@
 		406BE92D1D3F5A1DC7E386FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE27365E1FACD514001E59F6 /* AdSupport.framework */,
 				CD91B4E4EEC256D7922DF6F2 /* libPods-Mat Stats.a */,
 				10D91D2D236A7A4F4996EFD9 /* libPods-Mat StatsTests.a */,
 				F38CE86EF4CB6ACE6313A5F3 /* libPods-Mat StatsUITests.a */,
@@ -124,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				5FFBDF6E1DF74688006A7082 /* Mat Stats */,
-				CEE12B1B1E4A104200FEF864 /* GoogleService-Info.plist */,
 				5FFBDF831DF74689006A7082 /* Mat StatsTests */,
 				5FFBDF8E1DF74689006A7082 /* Mat StatsUITests */,
 				5FFBDF6D1DF74688006A7082 /* Products */,
@@ -146,6 +150,7 @@
 		5FFBDF6E1DF74688006A7082 /* Mat Stats */ = {
 			isa = PBXGroup;
 			children = (
+				CE3E572C1FAF7F72006C3DC1 /* Mat Stats-Bridging-Header.h */,
 				5FFBDF6F1DF74688006A7082 /* AppDelegate.swift */,
 				CE9C22BA1E08419200F4E43F /* FirebaseViewController.swift */,
 				5F15618C1DF8A2850028F3BA /* StatViewController.swift */,
@@ -154,6 +159,7 @@
 				5FFBDF731DF74689006A7082 /* Main.storyboard */,
 				5FFBDF761DF74689006A7082 /* Assets.xcassets */,
 				5FFBDF781DF74689006A7082 /* LaunchScreen.storyboard */,
+				CE689A9F1EDDAFD0005DD2BE /* GoogleService-Info.plist */,
 				5FFBDF7B1DF74689006A7082 /* Info.plist */,
 			);
 			path = "Mat Stats";
@@ -249,18 +255,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Sandburg;
 				TargetAttributes = {
 					5FFBDF6B1DF74688006A7082 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8Y3ZF344NV;
+						LastSwiftMigration = 0900;
 					};
 					5FFBDF7F1DF74689006A7082 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0900;
 						TestTargetID = 5FFBDF6B1DF74688006A7082;
 					};
 					5FFBDF8A1DF74689006A7082 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0900;
 						TestTargetID = 5FFBDF6B1DF74688006A7082;
 					};
 				};
@@ -291,7 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FFBDF7A1DF74689006A7082 /* LaunchScreen.storyboard in Resources */,
-				CEE12B1C1E4A104200FEF864 /* GoogleService-Info.plist in Resources */,
+				CE689AA01EDDAFD0005DD2BE /* GoogleService-Info.plist in Resources */,
 				5FFBDF771DF74689006A7082 /* Assets.xcassets in Resources */,
 				5FFBDF751DF74689006A7082 /* Main.storyboard in Resources */,
 			);
@@ -524,13 +534,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -552,11 +570,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -570,13 +589,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -592,9 +619,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -605,10 +635,13 @@
 			baseConfigurationReference = 58371FAB832EA1D142911D43 /* Pods-Mat Stats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Y3ZF344NV;
 				INFOPLIST_FILE = "Mat Stats/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -617,11 +650,28 @@
 			baseConfigurationReference = 9CB5F4EB71D579E87186789A /* Pods-Mat Stats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Y3ZF344NV;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+				);
 				INFOPLIST_FILE = "Mat Stats/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_LDFLAGS[arch=*]" = "${BUILT_PRODUCTS_DIR}/libCordova.a";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-Stats";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				"WARNING_LDFLAGS[arch=*]" = "";
 			};
 			name = Release;
@@ -635,6 +685,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-StatsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mat Stats.app/Mat Stats";
 			};
 			name = Debug;
@@ -648,6 +700,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-StatsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mat Stats.app/Mat Stats";
 			};
 			name = Release;
@@ -660,6 +714,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-StatsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Mat Stats";
 			};
 			name = Debug;
@@ -672,6 +728,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sandburg.Mat-StatsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Mat Stats";
 			};
 			name = Release;

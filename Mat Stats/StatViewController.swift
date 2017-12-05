@@ -2,8 +2,8 @@
 //  StatViewController.swift
 //  Mat Stats
 //
-//  Created by SAMUEL WOJCIK on 12/7/16.
-//  Copyright © 2016 Sandburg. All rights reserved.
+//  Created by SAMUEL WOJCIK and CATHY WOJCIK on 12/6/16.
+//  Copyright © 2016 Sam and Cathy Wojcik. All rights reserved.
 //
 
 import UIKit
